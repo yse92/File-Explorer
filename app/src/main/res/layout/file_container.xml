@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:background="@color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center_vertical"
+        android:layout_margin="8dp"
+        android:orientation="horizontal"
+        android:background="@color/black">
+
+        <ImageView
+            android:id="@+id/img_fileType"
+            android:layout_width="40dp"
+            android:src="@drawable/folder"
+            android:layout_height="40dp"
+            android:padding="8dp">
+
+        </ImageView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/tv_fileName"
+            android:text="File name.png"
+            android:textSize="18sp"
+            android:ellipsize="marquee"
+            android:textAlignment="gravity"
+            android:gravity="center_vertical"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true">
+
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tvFileSize"
+            android:layout_marginLeft="10dp"
+            android:textColor="@android:color/darker_gray"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
